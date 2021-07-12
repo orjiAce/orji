@@ -45,4 +45,51 @@ align-items: center;
   align-items: center;
   justify-content: center;
 }
+/**
+ * Basic CSS Media Query Template
+ * TODO: I should probably use Sass...
+ * Author: Michael Vieth
+ * ------------------------------------------
+ *  Responsive Grid Media Queries - 1280, 1024, 768, 480
+ *   1280-1024   - desktop (default grid)
+ *   1024-768    - tablet landscape
+ *   768-480     - tablet
+ *   480-less    - phone landscape & smaller
+ * --------------------------------------------
+ */
+@media all and (min-width: 1024px) and (max-width: 1280px) { }
 
+@media all and (min-width: 768px) and (max-width: 1024px) { }
+
+@media all and (min-width: 480px) and (max-width: 768px) { }
+
+@media all and (max-width: 480px) {
+  .content {
+
+    position: relative;
+    width:90%;
+    height: auto;
+    align-items: flex-start;
+    display: flex;
+    justify-content: center;
+  }
+
+  .content > div {
+    position: absolute;
+    width: 90%;
+    height: 100px;
+    transform-origin: 50% 50% 0px;
+
+    color: white;
+    line-height: 40px;
+    font-size: 14.5px;
+    background: lightblue;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    touch-action: none;
+    font-family:CircularSpotifyTxT-Black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
