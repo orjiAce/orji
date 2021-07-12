@@ -1,20 +1,22 @@
-import React from 'react';
+import React,{useState} from 'react';
 import styles from '../styles/banner.module.scss'
 
 import Image from 'next/image'
 import Button from "./Button";
+import Trail from "../components/Trail";
 
 const myLoader = ({src, width, quality}) => {
     return `./${src}?w=${width}&q=${quality || 75}`
 }
 
-const Banner = () => {
-    return (
-        <section className={styles.banner}>
-            <header className={styles.header}>
-<div className={styles.userImage}>
+const Banner = ({offsetY}) => {
 
-</div>
+    return (
+        <section className={styles.banner}   style={{ transform: `translateY(-${offsetY}px)`, transition:'0.5s' }}>
+            <header className={styles.header}>
+                <div className={styles.userImage}>
+
+                </div>
                 <nav className={styles.menu}>
                     <ul>
                         <li>
@@ -22,22 +24,24 @@ const Banner = () => {
                         </li>
                         <li>
                             Project
-                        </li><li>
-                        Blogs
+                        </li>
+                        <li>
+                            Blogs
                         </li>
                     </ul>
 
-<Button styles={styles.navBtn}>
-    <img src='./svg/document.svg' alt='rocket'/>
-    <span>
-My Resume
-    </span>
-</Button>
+                    <Button styles={styles.navBtn}>
+                        <img src='./svg/document.svg' alt='rocket'/>
+
+                        My Resume
+
+                    </Button>
                 </nav>
             </header>
             <div className={styles.content}>
-                <div className={styles.user}>
-                    <div className={styles.userContent}>
+                <div className={styles.user} style={{ transform: `translateY(${offsetY}px)`, transition:'0.7s' }}>
+                    <div className={styles.userContent} >
+                        <Trail open={true} >
                         <div className={styles.name}>
                             Orji joseph
                         </div>
@@ -50,14 +54,16 @@ My Resume
                             often non-linear.
                             There is no single, perfect process.
                         </div>
+
                         <Button styles={styles.bannerBtn}>
-                            <img src='./svg/rocket.svg'  alt='rocket'/>
+                            <img src='./svg/rocket.svg' alt='rocket'/>
 
                             <span>
                                         Let's work
                             </span>
 
                         </Button>
+                        </Trail>
                     </div>
 
 
@@ -72,17 +78,17 @@ My Resume
                     />*/}
                     <div>
 
-<div  className={styles.bannerMob}>
-    <Image
-        className={styles.image}
-        loader={myLoader}
-        src='phone-banner.svg'
-        quality={75}
-        alt="Picture of the author"
-        width={600}
-        height={400}
-    />
-</div>
+                        <div className={styles.bannerMob}  style={{ transform: `translateY(${offsetY * 0.5}px)`, transition:'0.5s' }}>
+                            <Image
+                                className={styles.image}
+                                loader={myLoader}
+                                src='phone-banner.svg'
+                                quality={75}
+                                alt="Picture of the author"
+                                width={600}
+                                height={400}
+                            />
+                        </div>
 
                     </div>
                 </div>
