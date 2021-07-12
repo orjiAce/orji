@@ -50,9 +50,7 @@ const Banner = ({offsetY}) => {
                             Front-End Engineer
                         </div>
                         <div className={styles.bio}>
-                            We get it—product development is
-                            often non-linear.
-                            There is no single, perfect process.
+                            Focused is on usability and performance improvements. My goal has always been to build useful, efficient and scalable products.
                         </div>
 
                         <Button styles={styles.bannerBtn}>

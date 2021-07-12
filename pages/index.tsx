@@ -6,9 +6,9 @@ import ProjectCard from "../components/ProjectCard";
 import Button from "../components/Button";
 
 import TechStack from "../components/TechStack";
-import StackChain from "../components/StackChain";
 import {useSpring, animated, to} from '@react-spring/web'
 import {useGesture} from 'react-use-gesture'
+import {FaGithub, FaInstagram, FaTwitter} from "react-icons/fa";
 
 
 const calcX = (y: number, ly: number) => -(y - ly - window.innerHeight / 2) / 20
@@ -42,6 +42,7 @@ const Home = () => {
             document.removeEventListener('gesturestart', preventDefault)
             document.removeEventListener('gesturechange', preventDefault)
         }
+
     }, [])
 
 
@@ -91,7 +92,7 @@ const Home = () => {
 
                 <div className={styles.titleWrap} style={{transform: `translateY(-${offsetY * 0.5}px)`, transition: '0.5s'}}>
 
-                    “Tech Stack .”
+                    “My Stack .”
                 </div>
 
                 <div className={styles.stack}
@@ -157,9 +158,11 @@ const Home = () => {
 
                                 <img src={image} className={styles.blogImg} alt={title}/>
                             </animated.div>
-                                <div className={styles.blogTitle}>
-                                    {title}
+    <a href={link} target='_blank'>
+    <div className={styles.blogTitle}>
+                                   {title}
                                 </div>
+    </a>
                                 <div className={styles.line}/>
 
 
@@ -179,23 +182,39 @@ const Home = () => {
     </span>
                     </div>
                     <div className={styles.wrap}>
+
                         <Button styles={styles.talkToMe}>
+                            <a href='mailto:orjiace@gmail.com'>
                             <img src='./svg/mail.svg' alt='arrow'/> Talk to me
+                            </a>
                         </Button>
+
                     </div>
                 </div>
                 <div className={styles.bottom}>
 
                     <div className={styles.socialButtons}>
                         <Button styles={styles.btns}>
+                            <a href='https://twitter.com/orjiace_'>
 
+
+<FaTwitter/>
+                            </a>
                         </Button>
                         <Button styles={styles.btns}>
+                            <a href='https://instagram.com/orjiace'>
 
+
+                            <FaInstagram/>
+                            </a>
                         </Button>
+
                         <Button styles={styles.btns}>
-
+                            <a href='https://github.com/orjiace'>
+                            <FaGithub/>
+                            </a>
                         </Button>
+
                     </div>
                 </div>
             </footer>
