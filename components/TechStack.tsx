@@ -61,13 +61,13 @@ function DraggableList({ items }: { items: object[] }) {
                     {...bind(i)}
                     key={i}
                     style={{
-                        background: items[i].color,
+                        background: items[i]["color"],
                         zIndex,
                         //boxShadow: shadow.to(s => `rgba(0, 0, 0, 0.15) 0px ${s}px ${2 * s}px 0px`),
                         y,
                         scale,
                     }}
-                    children={items[i].title}
+                    children={items[i]["title"]}
                 />
             ))}
         </div>
