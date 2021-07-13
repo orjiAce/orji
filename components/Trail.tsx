@@ -1,6 +1,5 @@
-import React, { useState } from 'react'
+import React  from 'react'
 import { useTrail, a } from '@react-spring/web'
-import styles from '../styles/Home.module.scss'
  const Trail: React.FC<{ open: boolean }> = ({ open, children }) => {
      const items = React.Children.toArray(children)
      const trail = useTrail(items.length, {
@@ -8,7 +7,7 @@ import styles from '../styles/Home.module.scss'
          opacity: open ? 1 : 0,
          y: open ? 0 : 20,
 
-         height: open ? 70 : 0,
+         height: open ? 80 : 0,
          from: { opacity: 0, y: 20, height: 0 },
      })
     return (

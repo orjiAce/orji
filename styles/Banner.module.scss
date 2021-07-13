@@ -1,0 +1,507 @@
+
+.bannerWrap {
+  width: 100%;
+  height: 750px;
+
+  .banner {
+    width: 100%;
+    height: 100%;
+    //background-color: #CDF564;
+    background-color: #191414;
+    overflow: hidden;
+
+    .header {
+      position: absolute;
+      top: 0;
+      height: 120px;
+      width: 100%;
+      background-color: transparent;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 2rem;
+
+      .userImage {
+        width: 70px;
+        height: 70px;
+        border-radius: 100%;
+
+        img {
+          width: 70px;
+          height: 70px;
+          object-fit: cover;
+          border-radius: 100%;
+        }
+      }
+
+      .menu {
+        width: 50%;
+        height: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        ul {
+          display: flex;
+          align-items: center;
+          flex-direction: row;
+          justify-content: center;
+
+          li {
+            color: #ffffff;
+            width: 120px;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 1rem;
+            list-style-type: none;
+            font-family: CircularSpotifyTxT-Bold, sans-serif;
+          }
+        }
+      }
+
+      .navBtn {
+        width: 161px;
+        height: 50px;
+        border: none;
+        background: #E8EBFF;
+        border-radius: 10px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        align-content: center;
+        justify-items: center;
+        flex-direction: row;
+        justify-content: space-evenly;
+        font-family: CircularSpotifyTxT-Black, sans-serif;
+        transition: 0.6s;
+        font-size: 16px;
+        color: #121212;
+
+        img {
+          max-height: 20px;
+        }
+
+        &:hover {
+          background-color: #0555C6;
+
+
+        }
+
+        img {
+          max-width: 20px;
+        }
+
+
+      }
+
+    }
+
+    .content {
+      width: 100%;
+      height: 100%;
+      flex-direction: row;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .user {
+        height: 100%;
+        width: 45%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url("../assets/shape-outline.svg");
+        background-size: 280px;
+        background-repeat: no-repeat;
+        background-position: left bottom;
+
+        .userContent {
+          width: 70%;
+          height: 60%;
+
+          flex-direction: column;
+          display: flex;
+          justify-content: center;
+          padding: 1rem;
+          .name {
+            height: 60px;
+            width: 80%;
+            flex-direction: column;
+            text-transform: capitalize;
+            align-items: flex-start;
+            display: flex;
+            justify-content: center;
+            font-family: CircularSpotifyTxT-Black, sans-serif;
+            font-size: 36px;
+            color: #EEEEEE;
+          }
+
+          .role {
+            background-color: rgba(14, 32, 17, 0.7);
+            width: 100%;
+            height: 70px;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            font-family: CircularSpotifyTxT-Black, sans-serif;
+            font-size: 48px;
+            color: #CDF564;
+          }
+
+          .bio {
+            height: 80px;
+            width: 80%;
+            align-items: center;
+            display: flex;
+
+            color: #CCCCCC;
+            font-family: CircularSpotifyTxT-Med, sans-serif;
+            font-size: 14px;
+            margin-bottom: 10px;
+          }
+
+          .bannerBtn {
+            cursor: pointer;
+            width: 190px;
+            height: 48px;
+            transition: 0.6s;
+            background: #5D5FEF;
+            border: none;
+            border-radius: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+
+            img {
+              max-width: 20px;
+            }
+
+            &:hover {
+              background: #07070c;
+
+            }
+
+            span {
+              font-size: 16px;
+              color: #fafafa;
+              font-family: CircularSpotifyTxT-Black, sans-serif;
+            }
+          }
+        }
+
+        .shapeOutline {
+          position: absolute;
+          width: 300px;
+          height: 300px;
+
+          left: 0;
+          bottom: 0;
+        }
+      }
+
+      .shapeFill {
+        height: 100%;
+        padding: 0;
+        margin: 0;
+        width: 45%;
+        background-image: url("../assets/blue-shape.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: flex-end;
+
+        .bannerMob {
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          justify-content: flex-end;
+          bottom: 0;
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+
+  }
+}
+
+
+/**
+ * Basic CSS Media Query Template
+ * TODO: I should probably use Sass...
+ * Author: Michael Vieth
+ * ------------------------------------------
+ *  Responsive Grid Media Queries - 1280, 1024, 768, 480
+ *   1280-1024   - desktop (default grid)
+ *   1024-768    - tablet landscape
+ *   768-480     - tablet
+ *   480-less    - phone landscape & smaller
+ * --------------------------------------------
+ */
+@media all and (min-width: 1024px) and (max-width: 1280px) { }
+
+@media all and (min-width: 768px) and (max-width: 1024px) { }
+
+@media all and (min-width: 480px) and (max-width: 768px) { }
+
+@media all and (max-width: 480px) {
+
+
+
+  .bannerWrap {
+    width: 100%;
+    height: 750px;
+
+    .banner {
+      width: 100%;
+      height: 650px;
+      //background-color: #CDF564;
+      background-color: #191414;
+
+
+      .header {
+        position: absolute;
+        top: 0;
+        height: 120px;
+        width: 100%;
+        background-color: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2rem;
+
+
+        .userImage {
+          width: 50px;
+          height: 50px;
+          border-radius: 100%;
+
+          img {
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+            border-radius: 100%;
+          }
+        }
+
+        .menu {
+
+          display: none;
+
+        }
+
+        .navBtn {
+          width: 161px;
+          height: 50px;
+          border: none;
+          background: #E8EBFF;
+          border-radius: 10px;
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          flex-direction: row;
+          justify-content: space-evenly;
+          transition: 0.6s;
+
+          &:hover {
+            background-color: #0555C6;
+
+            span {
+              color: #fff;
+            }
+          }
+
+          img {
+            max-width: 20px;
+          }
+
+          span {
+            transition: 0.6s;
+            font-size: 16px;
+            color: #121212;
+            font-family: CircularSpotifyTxT-Black, sans-serif;
+          }
+        }
+
+      }
+
+      .content {
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .user {
+          height: 100%;
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-image: url("../assets/shape-outline.svg");
+          background-size: 140px;
+          background-repeat: no-repeat;
+          background-position: left bottom;
+
+          .userContent {
+            width: 90%;
+            height: 40%;
+            flex-direction: column;
+            display: flex;
+            align-items: center;
+            align-content: center;
+            justify-content: space-between;
+            padding: 0;
+
+            .name {
+              height: 30px;
+              width: 100%;
+              justify-content: center;
+              text-transform: capitalize;
+              align-items: center;
+              text-align: center;
+              display: flex;
+              font-family: CircularSpotifyTxT-Black, sans-serif;
+              font-size: 26px;
+              color: #EEEEEE;
+            }
+
+            .role {
+              background-color: rgba(14, 32, 17, 0.7);
+              width: 100%;
+              height: 45px;
+              justify-content: center;
+              align-items: center;
+              padding: 10px;
+              display: flex;
+              font-family: CircularSpotifyTxT-Black, sans-serif;
+              font-size: 25px;
+              color: #CDF564;
+            }
+
+            .bio {
+              height: 40px;
+              width: 100%;
+              align-items: center;
+              display: flex;
+              text-align: center;
+              color: #ccc;
+              font-family: CircularSpotifyTxT-Med, sans-serif;
+              font-size: 14px;
+              margin-bottom: 10px;
+            }
+
+            .bannerBtn {
+              cursor: pointer;
+              width: 150px;
+              height: 40px;
+              transition: 0.6s;
+              background: #5D5FEF;
+              border: none;
+              border-radius: 100px;
+              display: flex;
+              align-items: center;
+              justify-content: space-evenly;
+
+              img {
+                max-width: 15px;
+              }
+
+              &:hover {
+                background: #07070c;
+
+              }
+
+              span {
+                font-size: 14px;
+                color: #fafafa;
+                font-family: CircularSpotifyTxT-Black, sans-serif;
+              }
+            }
+          }
+
+
+        }
+
+
+        .shapeFill {
+          height: 650px;
+          padding: 0;
+          margin: 0;
+          width: 100%;
+          background-image: none;
+          position: absolute;
+          display: flex;
+
+          align-items: flex-end;
+          flex-direction: row;
+          justify-content: flex-start;
+
+          .bannerMob {
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            justify-content: center;
+            bottom: 0;
+            width: 65%;
+            right: 0;
+            margin-left: 35%;
+
+            .image {
+              object-fit: cover;
+            }
+          }
+        }
+      }
+
+    }
+  }
+
+
+}
+
+
+/* Portrait */
+@media screen and (orientation:portrait) { /* Portrait styles here */
+
+
+}
+/* Landscape */
+@media screen and (orientation:landscape) { /* Landscape styles here */ }
+
+
+/* CSS for iPhone, iPad, and Retina Displays */
+
+/* Non-Retina */
+@media screen and (-webkit-max-device-pixel-ratio: 1) {
+}
+
+/* Retina */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5) {
+}
+
+/* iPhone Portrait */
+@media screen and (max-device-width: 480px) and (orientation:portrait) {
+}
+
+/* iPhone Landscape */
+@media screen and (max-device-width: 480px) and (orientation:landscape) {
+}
+
+/* iPad Portrait */
+@media screen and (min-device-width: 481px) and (orientation:portrait) {
+}
+
+/* iPad Landscape */
+@media screen and (min-device-width: 481px) and (orientation:landscape) {
+}

@@ -87,7 +87,7 @@ const Home = () => {
             <Banner offsetY={offsetY}/>
 
 
-            <div className={styles.techStack}>
+            <div className={styles.techStack} id='stack'>
 
 
                 <div className={styles.titleWrap} style={{transform: `translateY(-${offsetY * 0.5}px)`, transition: '0.5s'}}>
@@ -106,6 +106,7 @@ const Home = () => {
 
             </div>
             <div className={styles.projectsContainer}
+                 id='projects'
             >
 
                 <section className={styles.pTitleWrap}>
@@ -123,7 +124,7 @@ const Home = () => {
             </div>
 
 
-            <div className={styles.blogs}>
+            <div className={styles.blogs} id='blogs'>
                 <span>
                     Blogs
                 </span>

@@ -19,15 +19,14 @@ export const Projects = [
         projectName: 'Crowdfacture',
         image: './svg/crdFacture.svg',
         shortDescription: 'Crowdfacture is a Community driven production, manufacturing and distribution company by the people for the people',
-        links:
-            'https://Crowdfacture.com',
+        link: 'https://Crowdfacture.com',
     },
     {
         id: '3',
         projectName: 'Fundible',
         image:  './svg/fundible.svg',
         shortDescription: 'A block chain crowdfunding app, that lets users raise funds for a project in Bitcoin & and also withdraw to any wallet address',
-        links: 'https://Crowdfacture.com',
+        link: 'https://Crowdfacture.com',
 
     }
 ]

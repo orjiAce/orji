@@ -9,7 +9,7 @@ interface project{
         image:string,
         projectName:string,
         shortDescription:string,
-        link?:string
+        link:string
     }
 
 }
