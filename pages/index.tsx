@@ -105,8 +105,7 @@ const Home = () => {
 
 
             </div>
-            <div
-                className={styles.projectsContainer}
+            <div className={styles.projectsContainer}
             >
 
                 <section className={styles.pTitleWrap}>

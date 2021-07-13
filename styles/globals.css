@@ -16,6 +16,14 @@
   font-family: CircularSpotifyTxT-Med;
   src: url(../assets/@font-face/CircularSpotifyTxT-Med.woff);
 }
+@font-face {
+  font-family: Gordita-Bold;
+  src: url(../assets/@font-face/Gordita-Bold.woff);
+}
+@font-face {
+  font-family: Gordita-Medium;
+  src: url(../assets/@font-face/Gordita-Medium.woff);
+}
 
 html,
 body {

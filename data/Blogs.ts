@@ -17,24 +17,18 @@ export const Projects = [
     {
         id: '2',
         projectName: 'Crowdfacture',
-        image: '',
+        image: './svg/crdFacture.svg',
         shortDescription: 'Crowdfacture is a Community driven production, manufacturing and distribution company by the people for the people',
-        links: [
+        links:
             'https://Crowdfacture.com',
-            'https://play.google.com/store/apps/details?id=com.crowdfacture.crowdfacture_mobile'
-
-        ]
     },
     {
         id: '3',
         projectName: 'Fundible',
-        image: '',
+        image:  './svg/fundible.svg',
         shortDescription: 'A block chain crowdfunding app, that lets users raise funds for a project in Bitcoin & and also withdraw to any wallet address',
-        links: [
-            'https://Crowdfacture.com',
-            'https://play.google.com/store/apps/details?id=com.crowdfacture.crowdfacture_mobile'
+        links: 'https://Crowdfacture.com',
 
-        ]
     }
 ]
 

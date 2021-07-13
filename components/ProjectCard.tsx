@@ -2,6 +2,7 @@ import React from 'react';
 import styles from '../styles/ProjectCard.module.scss'
 
 
+
 interface project{
     projectDetails:{
         id:string,
@@ -17,13 +18,19 @@ const ProjectCard = ({projectDetails}: project) => {
     const {image,link,projectName,shortDescription} = projectDetails
 
     return (
-        <div className={styles.projectCard}>
-            <div className={styles.projectImage}>
 
-            </div>
-<div className={styles.projectTitle}>
-    {projectName}
+        <div className={styles.projectCard}>
+
+<div className={styles.projectImage}>
+    <img src={image}  alt={projectName}/>
 </div>
+
+            <a href={link} target='_blank' className={styles.projectTitle}>
+
+        {projectName}
+
+            </a>
+
             <div className={styles.projectDescription}>
                 <p>
                     {shortDescription}

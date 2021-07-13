@@ -33,7 +33,7 @@
     .titleWrap {
       line-height: 1.15;
       font-size: 2rem;
-      font-family:CircularSpotifyTxT-Black;
+      font-family:CircularSpotifyTxT-Black, sans-serif;
       height: auto;
       text-align: center;
       width: 50%;
@@ -86,7 +86,7 @@
   .projectsContainer {
     width: 100%;
     height: auto;
-    background-color: #F7E32D;
+    background-color: #A0C3D2;
     padding:50px 0;
     flex-direction: column;
     align-items: center;
@@ -96,7 +96,7 @@
         margin: 0;
         line-height: 1.15;
         font-size: 1.5rem;
-        font-family: "Circular Spotify Tx T Black", sans-serif;
+        font-family: CircularSpotifyTxT-Black, sans-serif;
         height: 100px;
         width: 60%;
         color: #303030;
@@ -124,13 +124,13 @@ padding: 10px;
     align-items: center;
     display: flex;
     span{
-      font-family: "Circular Spotify Tx T Bold", sans-serif;
+      font-family: CircularSpotifyTxT-Bold, sans-serif;
     }
     .bTitleWrap{
       margin: 0;
       line-height: 1.15;
       font-size: 2.5rem;
-      font-family: "Circular Spotify Tx T Black", sans-serif;
+      font-family: CircularSpotifyTxT-Black, sans-serif;
       height: 25%;
       width: 40%;
       color: #303030;
@@ -171,7 +171,7 @@ img{
           height: 70px;
           width: 100%;
           cursor: pointer;
-          font-family: CircularSpotifyTxT-Black;
+          font-family: CircularSpotifyTxT-Black,sans-serif;
           font-size: 20px;
           display: flex;
           align-items: center;
@@ -215,7 +215,7 @@ img{
         justify-content: center;
         height: 120px;
         span{
-          font-family: CircularSpotifyTxT-Bold;
+          font-family: CircularSpotifyTxT-Bold, sans-serif;
           color: #fafafa;
           font-size: 23px;
         }
@@ -253,7 +253,7 @@ width: 100%;
             background: #07070c;
 color: #fafafa;
           }
-          font-family: CircularSpotifyTxT-Black;
+          font-family: CircularSpotifyTxT-Black, sans-serif;
           img{
             display: flex;
             align-items: center;
@@ -386,7 +386,7 @@ margin: 0;
     .projectsContainer {
       width: 100%;
       height: auto;
-      background-color: #F7E32D;
+      background-color: #A0C3D2;
       padding:20px;
       flex-direction: column;
       align-items: center;
@@ -396,7 +396,7 @@ margin: 0;
         margin: 0;
         line-height: 1.15;
         font-size: 1.5rem;
-        font-family: "Circular Spotify Tx T Black", sans-serif;
+        font-family: CircularSpotifyTxT-Black, sans-serif;
         height: 100px;
         width: 60%;
         color: #303030;
@@ -476,7 +476,7 @@ flex-direction: column;
             height: 50px;
             width: 100%;
             cursor: pointer;
-            font-family: CircularSpotifyTxT-Black;
+            font-family: CircularSpotifyTxT-Black, sans-serif;
             font-size: 16px;
             display: flex;
             align-items: center;
@@ -515,7 +515,7 @@ flex-direction: column;
           justify-content: flex-start;
           height: 50px;
           span{
-            font-family: CircularSpotifyTxT-Bold;
+            font-family: CircularSpotifyTxT-Bold, sans-serif;
             color: #fafafa;
             font-size: 15px;
           }
@@ -546,7 +546,7 @@ flex-direction: column;
               background: #07070c;
               color: #fafafa;
             }
-            font-family: CircularSpotifyTxT-Black;
+            font-family: CircularSpotifyTxT-Black, sans-serif;
             img{
               display: flex;
               align-items: center;

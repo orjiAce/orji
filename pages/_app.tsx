@@ -6,7 +6,9 @@ function MyApp({ Component, pageProps }) {
   return (
       <>
 
-
+          <title>
+              Orji
+          </title>
 
       <Component {...pageProps} />
 

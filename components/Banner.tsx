@@ -5,6 +5,8 @@ import Image from 'next/image'
 import Button from "./Button";
 import Trail from "../components/Trail";
 
+import MyImg from '../public/me.jpg'
+
 const myLoader = ({src, width, quality}) => {
     return `./${src}?w=${width}&q=${quality || 75}`
 }
@@ -15,7 +17,9 @@ const Banner = ({offsetY}) => {
         <section className={styles.banner}   style={{ transform: `translateY(-${offsetY}px)`, transition:'0.5s' }}>
             <header className={styles.header}>
                 <div className={styles.userImage}>
-
+                    <a href=''>
+<img src='./me.jpg' alt='me'/>
+                    </a>
                 </div>
                 <nav className={styles.menu}>
                     <ul>
