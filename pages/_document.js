@@ -12,7 +12,6 @@ class MyDocument extends Document {
         return (
             <Html lang='en'>
                 <Head>
-
                     <script src="//code.tidio.co/bzdmmqqkzig9t1kk17s3fq3ydjj38sc0.js" async></script>
                 </Head>
                 <body>

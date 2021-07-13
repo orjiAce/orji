@@ -28,7 +28,7 @@ export const MenuFull = ({ style, toggleMenu }) => (
 
         </nav>
         <button className='navBtn'>
-            <a href='../file/Orji_Joseph_Resume.pdf' download>
+            <a href='./file/Orji_Joseph_Resume.pdf' download>
 
             <img src='./svg/document.svg' alt='rocket'/>
 
