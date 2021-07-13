@@ -1,6 +1,7 @@
 import React from "react";
 import { animated } from "react-spring";
 import {MdClose} from "react-icons/md";
+import Button from "./Button";
 
 
 export const MenuFull = ({ style, toggleMenu }) => (
@@ -27,10 +28,12 @@ export const MenuFull = ({ style, toggleMenu }) => (
 
         </nav>
         <button className='navBtn'>
+            <a href='../file/Orji_Joseph_Resume.pdf' download>
+
             <img src='./svg/document.svg' alt='rocket'/>
 
             My Resume
-
+            </a>
         </button>
     </animated.div>
 );

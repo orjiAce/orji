@@ -90,7 +90,8 @@ const Home = () => {
             <div className={styles.techStack} id='stack'>
 
 
-                <div className={styles.titleWrap} style={{transform: `translateY(-${offsetY * 0.5}px)`, transition: '0.5s'}}>
+                <div className={styles.titleWrap}
+                     style={{transform: `translateY(-${offsetY * 0.5}px)`, transition: '0.5s'}}>
 
                     “My Stack .”
                 </div>
@@ -140,31 +141,30 @@ const Home = () => {
 
                     {
                         Blogs.map((({title, id, image, link}) => (
-<div className={styles.blogCard}>
-                            <animated.div
-                                key={id}
-                                ref={domTarget}
-                                className={styles.blogImg}
-                                style={{
-                                    transform: 'perspective(400px)',
-                                    x,
-                                    y,
-                                    scale: to([scale, zoom], (s, z) => s + z),
-                                    rotateX,
-                                    rotateY,
-                                    rotateZ,
-                                }}>
+                            <div className={styles.blogCard}>
+                                <animated.div
+                                    key={id}
+                                    ref={domTarget}
+                                    className={styles.blogImg}
+                                    style={{
+                                        transform: 'perspective(400px)',
+                                        x,
+                                        y,
+                                        scale: to([scale, zoom], (s, z) => s + z),
+                                        rotateX,
+                                        rotateY,
+                                        rotateZ,
+                                    }}>
 
 
-                                <img src={image} className={styles.blogImg} alt={title}/>
-                            </animated.div>
-    <a href={link} target='_blank'>
-    <div className={styles.blogTitle}>
-                                   {title}
-                                </div>
-    </a>
+                                    <img src={image} className={styles.blogImg} alt={title}/>
+                                </animated.div>
+                                <a href={link} target='_blank'>
+                                    <div className={styles.blogTitle}>
+                                        {title}
+                                    </div>
+                                </a>
                                 <div className={styles.line}/>
-
 
                             </div>
                         )))
@@ -185,7 +185,7 @@ const Home = () => {
 
                         <Button styles={styles.talkToMe}>
                             <a href='mailto:orjiace@gmail.com'>
-                            <img src='./svg/mail.svg' alt='arrow'/> Talk to me
+                                <img src='./svg/mail.svg' alt='arrow'/> Talk to me
                             </a>
                         </Button>
 
@@ -198,20 +198,20 @@ const Home = () => {
                             <a href='https://twitter.com/orjiace_'>
 
 
-<FaTwitter/>
+                                <FaTwitter/>
                             </a>
                         </Button>
                         <Button styles={styles.btns}>
                             <a href='https://instagram.com/orjiace'>
 
 
-                            <FaInstagram/>
+                                <FaInstagram/>
                             </a>
                         </Button>
 
                         <Button styles={styles.btns}>
                             <a href='https://github.com/orjiace'>
-                            <FaGithub/>
+                                <FaGithub/>
                             </a>
                         </Button>
 

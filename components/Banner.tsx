@@ -61,10 +61,13 @@ const Banner = ({offsetY}) => {
                             </ul>
 
                             <Button styles={styles.navBtn}>
+                                <a href='../file/Orji_Joseph_Resume.pdf' download>
+
+
                                 <img src='./svg/document.svg' alt='rocket'/>
 
                                 My Resume
-
+                                </a>
                             </Button>
                         </nav>
 
@@ -91,18 +94,22 @@ const Banner = ({offsetY}) => {
                                         Front-End Engineer
                                     </div>
                                     <div className={styles.bio}>
-                                        Focused is on usability and performance improvements. My goal has always been to
+                                        Focused on usability and performance improvements. My goal has always been to
                                         build
                                         useful, efficient and scalable products.
                                     </div>
 
                                     <Button styles={styles.bannerBtn}>
+                                        <a href='mailto:orjiace@gmail.com'>
+
+
                                         <img src='./svg/rocket.svg' alt='rocket'/>
 
                                         <span>
                                         Let's work
                             </span>
 
+                                        </a>
                                     </Button>
                                 </Trail>
                             </div>
