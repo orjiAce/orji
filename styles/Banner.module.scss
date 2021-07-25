@@ -130,8 +130,7 @@ a{
 
         .userContent {
           width: 70%;
-          height: 60%;
-
+          height: 65%;
           flex-direction: column;
           display: flex;
           justify-content: center;
@@ -182,6 +181,7 @@ a{
             border: none;
             border-radius: 100px;
             display: flex;
+            z-index: 10;
             align-items: center;
             justify-content: space-evenly;
 a{
@@ -378,7 +378,7 @@ a{
 
           .userContent {
             width: 90%;
-            height: 40%;
+            height: 50%;
             flex-direction: column;
             display: flex;
             align-items: center;
@@ -433,6 +433,7 @@ a{
               border: none;
               border-radius: 100px;
               display: flex;
+              z-index: 10;
               align-items: center;
               justify-content: space-evenly;
               a{

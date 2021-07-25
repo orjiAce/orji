@@ -61,7 +61,7 @@ const Banner = ({offsetY}) => {
                             </ul>
 
                             <Button styles={styles.navBtn}>
-                                <a href='./file/Orji_Joseph_Resume.pdf' download>
+                                <a href='https://doc-10-24-docs.googleusercontent.com/docs/securesc/ka8qf4a82cgdr5lnaq5enh3j3qqbcq6q/92tl8lak5mvklmp5mi8vvtd3lpfqp5a0/1627157250000/12449996658645287156/12449996658645287156/1SbySBRhsJoHP-zR7pBFp-nH84hSn2RQf?e=download&authuser=0&nonce=efnjfkp7t1bfs&user=12449996658645287156&hash=19ik86algq233bhqtre8sb4uvaspcn4e' download>
 
 
                                 <img src='./svg/document.svg' alt='rocket'/>
@@ -99,8 +99,9 @@ const Banner = ({offsetY}) => {
                                         useful, efficient and scalable products.
                                     </div>
 
-                                    <Button styles={styles.bannerBtn}>
-                                        <a href='mailto:orjiace@gmail.com'>
+                                    <a href='mailto:orjiace@gmail.com' className={styles.bannerBtn}>
+
+
 
 
                                         <img src='./svg/rocket.svg' alt='rocket'/>
@@ -109,9 +110,10 @@ const Banner = ({offsetY}) => {
                                         Let's work
                             </span>
 
-                                        </a>
-                                    </Button>
+
+                                    </a>
                                 </Trail>
+
                             </div>
 
 
